@@ -1,0 +1,138 @@
+﻿:root {
+  --bg: #0b1220;
+  --surface: #111a2d;
+  --surface-soft: #1a2642;
+  --text: #eaf0ff;
+  --muted: #a9b5d4;
+  --line: #2a3a61;
+  --accent: #2ea8ff;
+  --accent-2: #6cf2b5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(1200px 600px at 10% -10%, #1d3e72 0%, var(--bg) 50%);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
+}
+
+.wrap {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.hero {
+  padding: 64px 0 36px;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin: 0 0 12px;
+}
+
+.subtitle {
+  color: var(--muted);
+  max-width: 720px;
+  margin: 0;
+}
+
+.cta {
+  margin-top: 26px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid var(--line);
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--accent), #4cc7ff);
+  color: #04111f;
+  border-color: transparent;
+}
+
+.btn.ghost {
+  background: var(--surface);
+  color: var(--text);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  padding: 24px 0 56px;
+}
+
+.card {
+  background: linear-gradient(160deg, var(--surface), var(--surface-soft));
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 1.02rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.section {
+  padding: 10px 0 44px;
+}
+
+.section h2 {
+  margin: 0 0 8px;
+  font-size: 1.55rem;
+}
+
+.section p,
+.section li {
+  color: var(--muted);
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.foot {
+  border-top: 1px solid var(--line);
+  margin-top: 32px;
+  padding: 18px 0 34px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}

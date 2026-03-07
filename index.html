@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billiards Book</title>
+    <meta name="description" content="Track pool and snooker matches, run tournaments, and follow friends live." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="nav">
+        <div class="brand">Billiards Book</div>
+        <a href="./privacy.html">Privacy Policy</a>
+      </header>
+
+      <main>
+        <section class="hero">
+          <h1 class="title">Track live billiards. Run better tournaments.</h1>
+          <p class="subtitle">
+            Billiards Book is a mobile app for 8-ball, 9-ball, 10-ball, and snooker. Create matches,
+            run tournaments, follow friends, and keep stats in one place.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="https://play.google.com/store" target="_blank" rel="noreferrer">Get on Google Play</a>
+            <a class="btn ghost" href="./privacy.html">Read Privacy Policy</a>
+          </div>
+        </section>
+
+        <section class="cards">
+          <article class="card">
+            <h3>Live Match Scoring</h3>
+            <p>Real-time score sync between players across supported game modes.</p>
+          </article>
+          <article class="card">
+            <h3>Tournament Formats</h3>
+            <p>Round robin, single elimination, double elimination, and Kaisa bracket.</p>
+          </article>
+          <article class="card">
+            <h3>Social Play</h3>
+            <p>Add friends, follow activity feed, and watch tournaments as they happen.</p>
+          </article>
+          <article class="card">
+            <h3>Player Profiles</h3>
+            <p>Track history and performance over time with clear per-player stats.</p>
+          </article>
+        </section>
+
+        <section class="section">
+          <div class="panel">
+            <h2>Supported Games</h2>
+            <ul>
+              <li>8-ball</li>
+              <li>9-ball</li>
+              <li>10-ball</li>
+              <li>Snooker (frame and point tracking)</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="foot">
+        <div>© <span id="year"></span> Billiards Book</div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

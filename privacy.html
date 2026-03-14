@@ -16,50 +16,69 @@
       <main class="section">
         <div class="panel">
           <h1>Privacy Policy</h1>
-          <p><strong>Last updated:</strong> March 8, 2026</p>
+          <p><strong>Last updated:</strong> March 14, 2026</p>
 
           <h2>1. Information We Collect</h2>
           <ul>
-            <li>Account information (such as email) for authentication.</li>
-            <li>Gameplay data (matches, tournaments, scores, player names, venues, event logs).</li>
-            <li>Friendship and social graph data inside the app.</li>
-            <li>Diagnostic data if crash/error reporting is enabled.</li>
+            <li>Account data: email and authentication session data.</li>
+            <li>Profile data: username and display name.</li>
+            <li>Gameplay data: matches, tournaments, scores, venues, comments, and event logs you create in the app.</li>
+            <li>Social data: friend requests, friendships, and tournament participation records.</li>
+            <li>Notification data: push token and platform (only after you grant notification permission).</li>
+            <li>Diagnostics: crash and error data when error reporting is enabled.</li>
           </ul>
 
           <h2>2. How We Use Information</h2>
           <ul>
-            <li>To provide core app features and sync data across devices.</li>
-            <li>To support live tournament and match viewing.</li>
-            <li>To improve reliability, performance, and bug fixing.</li>
+            <li>To authenticate users and keep accounts secure.</li>
+            <li>To provide match and tournament features, including sync across devices.</li>
+            <li>To show social features such as friends, comments, and live updates.</li>
+            <li>To send app notifications (for example tournament invites and comments).</li>
+            <li>To monitor reliability and fix bugs.</li>
           </ul>
 
           <h2>3. Data Storage</h2>
           <p>
-            Data may be stored locally on your device and in our cloud backend for synchronization and social features.
+            Data is stored locally on your device and in our cloud backend (Supabase) to support account, sync, and social functionality.
+            We use encrypted transport (HTTPS/TLS) for data in transit.
           </p>
 
-          <h2>4. Sharing</h2>
+          <h2>4. Data Sharing and Visibility</h2>
           <ul>
             <li>We do not sell personal data.</li>
-            <li>Public or friends-visible in-app content is shown according to app visibility settings.</li>
-            <li>Service providers are used only as needed to operate the app.</li>
+            <li>In-app content is visible according to feature settings (for example friend visibility, tournament visibility, and participants).</li>
+            <li>We use service providers only to operate the app:</li>
+            <li>Supabase (authentication, database, realtime, edge functions).</li>
+            <li>Expo push service (push notification delivery).</li>
+            <li>Sentry (error and crash monitoring, if enabled).</li>
           </ul>
 
           <h2>5. Retention</h2>
           <p>
-            Data is retained while your account is active or as needed to provide the service, unless deletion is requested.
+            We retain account and app data while your account is active, or as needed to provide the service.
+            If you delete your account, associated account data is removed from our backend according to system constraints and legal obligations.
           </p>
 
-          <h2>6. Your Choices</h2>
+          <h2>6. Your Choices and Controls</h2>
           <ul>
-            <li>You can request deletion of your account and related data.</li>
+            <li>You can delete your account in the app (profile screen).</li>
+            <li>You can disable notifications at the device level.</li>
             <li>You can remove local app data by uninstalling or clearing app storage.</li>
           </ul>
 
-          <h2>7. Children</h2>
+          <h2>7. Security Procedures</h2>
+          <p>
+            We apply technical and organizational measures to protect data, including authentication controls, row-level access rules in the backend, and restricted service-role usage for server-side operations.
+            No method of transmission or storage is 100% secure, but we work to minimize risk.
+          </p>
+
+          <h2>8. Children</h2>
           <p>The app is not directed to children under 13.</p>
 
-          <h2>8. Contact</h2>
+          <h2>9. Changes to This Policy</h2>
+          <p>We may update this policy. Material changes will be reflected by updating the "Last updated" date.</p>
+
+          <h2>10. Contact</h2>
           <p>
             For privacy requests, contact: <a href="mailto:kerjussi@gmail.com">kerjussi@gmail.com</a>
           </p>
